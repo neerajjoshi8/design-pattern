@@ -25,10 +25,10 @@ public class Subscriber implements Observer {
 
     @Override
     public void subscribeChannel(Channel channel) {
-        if(!channels.contains(channel)) {
+        if (!channels.contains(channel)) {
             channels.add(channel);
         }
-        if(channel != null && !channel.getSubscribers().contains(this)) {
+        if (channel != null && !channel.getSubscribers().contains(this)) {
             channel.getSubscribers().add(this);
         }
     }

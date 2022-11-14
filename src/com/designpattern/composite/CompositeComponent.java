@@ -19,7 +19,7 @@ public class CompositeComponent implements Component {
     @Override
     public void showPrice() {
         System.out.println(name);
-        for(Component component : components) {
+        for (Component component : components) {
             component.showPrice();
         }
     }

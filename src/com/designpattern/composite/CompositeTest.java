@@ -6,10 +6,10 @@ public class CompositeTest {
         LeafComponent keyboard = new LeafComponent("keyboard", 800);
         LeafComponent mouse = new LeafComponent("mouse", 500);
         LeafComponent speaker = new LeafComponent("speaker", 1200);
-        
+
         LeafComponent ram = new LeafComponent("ram", 2000);
         LeafComponent cpu = new LeafComponent("cpu", 5000);
-        
+
         CompositeComponent peripheral = new CompositeComponent("peripheral");
         peripheral.getComponents().add(keyboard);
         peripheral.getComponents().add(mouse);
